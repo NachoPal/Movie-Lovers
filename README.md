@@ -10,4 +10,6 @@ Mini_magick rubygem required for cropping the poster images and ensure all of th
 
 Be aware of folders ./public/img are missing in the repository due to both are initially empty.
 
+IMDB rubygem required. Movie's info comes from that DB so it takes some time to get a response.
+
 Again, don't pay attention to the front-end desing, just to the core of the App ;)
