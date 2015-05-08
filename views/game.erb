@@ -1,0 +1,21 @@
+<html>
+<head></head>
+<body>
+	<h2>Hi <%= @user_name %> this game consist in guessing which movie was released in a certain year. I'll offer you options according to a key word you provide me </h2>
+	<form action="game/show_options" method="POST">
+		<p>Select the level: </p> 
+		<select name="level">
+			<option Value="2">2 Options</option>
+			<option Value="3">3 Options</option>
+			<option Value="4">4 Options</option>
+			<option Value="5">5 Options</option>
+			<option Value="6">6 Options</option>
+			<option Value="7">7 Options</option>
+			<option Value="8">8 Options</option>
+			<option Value="9">9 Options</option>
+		</select>
+		<br><br>
+		<input type="submit" value="Show options!"> 
+	</form>
+</body>
+</html>

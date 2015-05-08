@@ -1,0 +1,20 @@
+<html>
+<head></head>
+<body>
+<% @all_poster_path.each_with_index do |url, i| %>
+
+	<% if @years_list[i] == @random_year %>
+		<a href="/game/show_options/<%=@key_word[@stage + 1]%>
+		/<%=@level%>/<%=@stage + 1%>" 
+		style="cursor: pointer" onclick="alert('CORRECT')">
+			<img src=<%=url%>/>
+		</a> 
+		
+	<% else %>
+		<img src=<%=url%> class="false" style="cursor: pointer" onclick="alert('NOOOOOO')"/>
+	<% end %>
+<% end %>
+
+<h3>Which of these films was released in <%= @random_year %> ??</h3>
+</body>
+</html>
